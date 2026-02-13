@@ -1,2 +1,9 @@
 <h1>hello angular</h1>
-<app-demo></app-demo>
+<p>one way binding</p>
+<p>{{name}}</p>
+<input [value]="name">
+<p>event binding</p>
+<button (click)="sayHi()">click</button>
+<p>two way binding</p>
+<input [(ngModel)]="name">
+
