@@ -1,1 +1,6 @@
 <p>demo works!</p>
+<input type="text" [(ngModel)]="bg">
+
+<div [style]="{'height':'200px','width':'200px'}" [ngClass]="bg + ' border border-2'">
+    
+</div>
