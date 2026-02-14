@@ -1,1 +1,17 @@
 <p>demo works!</p>
+<h1 *ngIf="show">hello </h1>
+<button (click)="toggle()">click</button>
+
+<ul>
+    <li *ngFor="let item of products">{{item}}</li>
+</ul>
+
+<div>
+    <div *ngFor="let item of prods">
+        <h1>{{item.title}}</h1>
+        <img [src]="item.image" height="150px" width="150px" style="object-fit: contain;" />
+
+        <p>{{item.price}}</p>
+
+    </div>
+</div>
