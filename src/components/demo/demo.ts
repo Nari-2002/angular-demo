@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-demo',
-  imports: [FormsModule,CommonModule],
+  standalone: true,
+  imports: [FormsModule, CommonModule],
   templateUrl: './demo.html',
-  styleUrl: './demo.css',
+  styleUrls: ['./demo.css'],
 })
 export class Demo {
-  bg:string="hi"
+  bg: string = "hi";
+  list: string[] = ["a", "b", "c"];
 }
